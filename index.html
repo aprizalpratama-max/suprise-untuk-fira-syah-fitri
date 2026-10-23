@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff0f5">
+<meta name="description" content="Kejutan ulang tahun yang dibuat dengan cinta untuk Fira Syah Fitri.">
+<title>Untuk Fira Syah Fitri ♡</title>
+<style>
+:root{--hot:#e96f9d;--deep:#a84470;--pale:#fff0f5;--ink:#60394c;--muted:#9b7185;--line:#f7d5e2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#fff2f7,#fffafd 45%,#fff5f9);color:var(--ink);font-family:"Trebuchet MS",Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+button{font:inherit}.floating-hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.float-heart{position:absolute;bottom:-50px;color:#f2a0bd;opacity:.45;animation:floatUp linear infinite}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+.page{position:relative;z-index:1;width:min(760px,100%);margin:auto;padding:18px 15px 50px}
+.hero{text-align:center;padding:25px 10px 20px}.pill{display:inline-block;background:#ffe0eb;color:var(--deep);border:1px solid #f8c9da;border-radius:999px;padding:8px 13px;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;font-weight:700}
+h1{font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(43px,10vw,75px);font-weight:500;line-height:1.05;color:var(--deep);margin:16px 0 8px}
+.subtitle{max-width:510px;margin:0 auto;color:var(--muted);font-size:15px;line-height:1.8}.blink{display:inline-block;color:var(--hot);animation:beat 1.25s infinite}
+@keyframes beat{50%{transform:scale(1.2)}}
+.card{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:25px;padding:23px;margin:16px 0;box-shadow:0 12px 32px #bf658b12;backdrop-filter:blur(5px)}
+h2{font-family:"Brush Script MT","Segoe Script",cursive;color:var(--deep);font-size:clamp(30px,7vw,42px);font-weight:500;text-align:center;margin:0 0 12px}
+p{line-height:1.85}.center{text-align:center}.small{font-size:12px;line-height:1.7;color:var(--muted)}
+.btn{border:0;border-radius:999px;background:linear-gradient(135deg,#f4a6c1,#e96f9d);color:white;font-weight:700;font-size:13px;padding:13px 20px;box-shadow:0 7px 18px #e96f9d36;cursor:pointer;transition:transform .18s}
+.btn:hover{transform:translateY(-2px)}.btn.secondary{background:#fff0f5;color:var(--deep);border:1px solid #f4c3d5;box-shadow:none}
+.cover{position:fixed;inset:0;z-index:10;background:radial-gradient(circle at 50% 35%,#fff,#fff0f6 45%,#ffd9e8);display:flex;align-items:center;justify-content:center;padding:22px;transition:opacity .7s,visibility .7s}
+.cover.closed{opacity:0;visibility:hidden;pointer-events:none}.envelope-wrap{text-align:center;width:min(420px,100%)}
+.envelope{position:relative;width:min(290px,80vw);height:190px;margin:25px auto 30px;cursor:pointer;filter:drop-shadow(0 14px 18px #b9507a20)}
+.env-back{position:absolute;inset:0;background:#f6a9c4;border-radius:13px}.env-paper{position:absolute;left:12%;right:12%;top:12%;height:75%;background:#fffdfd;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:"Brush Script MT","Segoe Script",cursive;color:var(--deep);font-size:29px;transition:transform .7s}
+.env-front{position:absolute;inset:0;background:#f8c1d4;clip-path:polygon(0 100%,0 0,50% 58%,100% 0,100% 100%);border-radius:0 0 13px 13px}
+.env-flap{position:absolute;inset:0;background:#f19ab9;clip-path:polygon(0 0,100% 0,50% 58%);transform-origin:top;transition:transform .5s;z-index:2}
+.envelope.open .env-flap{transform:rotateX(180deg)}.envelope.open .env-paper{transform:translateY(-45px)}
+.cover-note{font-family:"Brush Script MT","Segoe Script",cursive;font-size:28px;color:var(--deep);margin:0 0 8px}
+.hidden{display:none!important}.letter-text{white-space:pre-line;text-align:left;line-height:2;font-family:Georgia,serif;font-size:16px;background:#fff8fb;border:1px dashed #f0bdd0;border-radius:18px;padding:20px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.photo{position:relative;min-height:170px;border:1px dashed #e7a3bd;border-radius:18px;overflow:hidden;background:linear-gradient(135deg,#fff1f6,#ffe0eb);display:flex;align-items:center;justify-content:center;color:#a75b7a;text-align:center;padding:12px;font-size:12px;line-height:1.6}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.photo span{position:relative;background:#ffffffd9;border-radius:12px;padding:8px;z-index:1}
+input[type=file]{display:none}.music-row{display:flex;align-items:center;gap:14px;text-align:left}.disc{width:58px;height:58px;flex-shrink:0;border-radius:50%;background:radial-gradient(circle,#fff 0 12%,#f5a6c2 13% 23%,#e96f9d 24% 100%);box-shadow:0 4px 12px #e96f9d35;display:grid;place-items:center;color:white;font-size:20px}
+.disc.playing{animation:spin 4s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.counter{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}.time{background:#fff0f5;border:1px solid #f9d8e4;border-radius:15px;padding:12px;min-width:68px}
+.time strong{display:block;font-size:24px;color:var(--hot)}.time span{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.qrbox{width:min(280px,100%);margin:16px auto;padding:12px;border:2px solid #f2a6c2;background:white;border-radius:24px;position:relative}
+#qrcode{display:flex;justify-content:center;align-items:center;min-height:230px}#qrcode img,#qrcode canvas{max-width:100%;height:auto!important}
+.heart-stamp{position:absolute;right:-12px;top:-16px;background:#ec79a1;color:#fff;width:42px;height:42px;border:4px solid #fff;border-radius:50%;display:grid;place-items:center;font-size:23px}
+footer{text-align:center;color:#b9869c;font-size:12px;padding:22px 0}
+@media(max-width:430px){.card{padding:18px}.gallery{gap:8px}.photo{min-height:135px}.music-row{align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+<div class="cover" id="cover">
+ <div class="envelope-wrap">
+  <span class="pill">made with love ♡</span>
+  <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Buka amplop">
+   <div class="env-back"></div><div class="env-paper">for Fira ♡</div><div class="env-front"></div><div class="env-flap"></div>
+  </div>
+  <p class="cover-note">Ada sesuatu untukmu, Fira...</p>
+  <p class="small">Ketuk amplopnya untuk membuka kejutan kecil ini.</p>
+  <button class="btn" id="openBtn">Buka kejutan ♡</button>
+ </div>
+</div>
+<main class="page">
+ <header class="hero">
+  <span class="pill">a little birthday surprise</span>
+  <h1>Untuk <span id="partnerHeading">Fira Syah Fitri</span> <span class="blink">♥</span></h1>
+  <p class="subtitle">Untuk seseorang yang sangat berarti buat aku. Semoga halaman kecil ini bisa bikin kamu tersenyum hari ini. ♡</p>
+ </header>
+ <section class="card">
+  <h2>Sepucuk surat untukmu</h2>
+  <p class="center small">Ada pesan kecil yang ingin aku sampaikan...</p>
+  <div class="center"><button class="btn" id="letterBtn">Buka surat cintaku ♡</button></div>
+  <div id="letterContent" class="hidden" style="margin-top:18px">
+   <div class="letter-text" id="letterText">Happy Birthday yaa, Fira Syah Fitri! ♡
+
+Semoga segala keinginan kamu bisa terkabul. Aku buat ini spesial buat kamu. Aku nggak tahu harus bilang apa atas semua keegoisan aku ke kamu. Aku harap kamu mau baikan sama aku, ya, dan jangan tinggalin aku sendiri lagi.
+
+Aku nggak mau kehilangan kamu untuk yang kesekian kalinya, jadi aku mohon sama kamu, kita baikan, ya. Jalani hubungan ini lagi untuk selamanya. Maafin aku yaa, sayang.
+
+Aku tahu kata-kata saja nggak cukup, tapi aku ingin kamu tahu kalau kamu berarti buat aku. Aku berharap kita bisa bicara baik-baik, saling memahami, dan memperbaiki semuanya pelan-pelan. Apa pun yang kamu rasakan, aku akan berusaha menghargainya.
+
+Selamat ulang tahun, sayang. Semoga hari ini penuh hal baik dan senyum yang tulus. ♡</div>
+   <p class="center small">Dari aku, yang berharap hal-hal baik untukmu. ♡</p>
+  </div>
+ </section>
+ <section class="card">
+  <h2>Potongan cerita kita</h2>
+  <p class="center small">Beberapa potongan cerita kita ♡</p>
+  <div class="gallery">
+   <label class="photo" for="photo1"><img id="img1" alt="Kenangan kita 1" src="foto1.jpg"><span id="caption1" class="hidden">♡ Foto kenangan pertama<br>Ketuk untuk memilih foto</span></label>
+   <label class="photo" for="photo2"><img id="img2" alt="Kenangan kita 2" src="foto2.jpg"><span id="caption2" class="hidden">♡ Foto kenangan kedua<br>Ketuk untuk memilih foto</span></label>
+   <label class="photo" for="photo3"><img id="img3" alt="Kenangan kita 3" src="foto3.jpg"><span id="caption3" class="hidden">♡ Momen favorit<br>Ketuk untuk memilih foto</span></label>
+   <label class="photo" for="photo4"><img id="img4" alt="Kenangan kita 4" src="foto4.jpg"><span id="caption4" class="hidden">♡ Senyum kesukaan<br>Ketuk untuk memilih foto</span></label>
+  </div>
+  <input type="file" accept="image/*" id="photo1"><input type="file" accept="image/*" id="photo2"><input type="file" accept="image/*" id="photo3"><input type="file" accept="image/*" id="photo4">
+ </section>
+ <section class="card">
+  <h2>Lagu untukmu</h2>
+  <div class="music-row">
+   <div class="disc" id="disc">♫</div>
+   <div style="flex:1">
+    <strong id="songTitle">Beautiful Girl</strong>
+    <div class="small">Lagu khusus untukmu ♡</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+     <label for="musicFile" class="btn secondary" style="cursor:pointer">Pilih file lagu ♫</label>
+     <button class="btn" id="musicToggle">Putar</button>
+    </div>
+    <input type="file" id="musicFile" accept="audio/*">
+   </div>
+  </div>
+  <audio id="audio" src="Beautiful Girl.mp3" loop></audio>
+  <p class="small">Tekan tombol Putar untuk mendengarkan lagu. Browser mungkin meminta kamu memulai musik dengan menekan tombol.</p>
+ </section>
+ <section class="card center">
+  <h2>Hari spesial kita ♡</h2>
+  <p class="small">Penghitung waktu sejak tanggal jadian yang kamu tentukan: 24 Oktober 2026.</p>
+  <div class="counter">
+   <div class="time"><strong id="days">0</strong><span>hari</span></div><div class="time"><strong id="hours">0</strong><span>jam</span></div>
+   <div class="time"><strong id="minutes">0</strong><span>menit</span></div><div class="time"><strong id="seconds">0</strong><span>detik</span></div>
+  </div>
+ </section>
+ <section class="card center">
+  <h2>Simpan kejutan ini</h2><p>QR code untuk membuka halaman ini dari perangkat lain.</p>
+  <div class="qrbox"><span class="heart-stamp">♥</span><div id="qrcode"></div></div>
+  <p class="small" id="qrStatus">Publikasikan website dulu agar QR berisi alamat yang benar.</p>
+  <button class="btn" id="downloadQR">Unduh QR code</button>
+  <p class="small">QR ini berbentuk persegi dengan aksen pink dan cap hati. Untuk dipakai sungguhan, unduh QR setelah website online dan tes pemindaian dari HP lain.</p>
+ </section>
+ <footer>Dibuat spesial untuk Fira Syah Fitri, dengan banyak cinta ♡</footer>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+const SETTINGS = {
+ partnerName: "Fira Syah Fitri",
+ relationshipStart: "2026-10-24T00:00:00",
+ accentColor: "#e96f9d",
+ musicTitle: "Beautiful Girl",
+ musicFile: "Beautiful%20Girl.mp3"
+};
+document.documentElement.style.setProperty("--hot",SETTINGS.accentColor);
+document.title="Untuk "+SETTINGS.partnerName+" ♡";
+document.getElementById("partnerHeading").textContent=SETTINGS.partnerName;
+function openSurprise(){document.getElementById("envelope").classList.add("open");setTimeout(()=>document.getElementById("cover").classList.add("closed"),450)}
+document.getElementById("openBtn").addEventListener("click",openSurprise);
+document.getElementById("envelope").addEventListener("click",openSurprise);
+document.getElementById("envelope").addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openSurprise()}});
+document.getElementById("letterBtn").addEventListener("click",()=>{
+ const box=document.getElementById("letterContent");box.classList.toggle("hidden");
+ document.getElementById("letterBtn").textContent=box.classList.contains("hidden")?"Buka surat cintaku ♡":"Tutup surat ♡";
+});
+for(let i=1;i<=4;i++){document.getElementById("photo"+i).addEventListener("change",()=>{
+ const file=document.getElementById("photo"+i).files[0];if(!file)return;
+ const img=document.getElementById("img"+i);img.src=URL.createObjectURL(file);img.classList.remove("hidden");document.getElementById("caption"+i).classList.add("hidden");
+})}
+const audio=document.getElementById("audio"),musicInput=document.getElementById("musicFile"),musicToggle=document.getElementById("musicToggle"),disc=document.getElementById("disc");
+document.getElementById("songTitle").textContent=SETTINGS.musicTitle;
+if(SETTINGS.musicFile)audio.src=SETTINGS.musicFile;
+musicInput.addEventListener("change",()=>{const f=musicInput.files[0];if(!f)return;audio.src=URL.createObjectURL(f);document.getElementById("songTitle").textContent=f.name;audio.play().then(()=>{musicToggle.textContent="Jeda";disc.classList.add("playing")}).catch(()=>{})});
+musicToggle.addEventListener("click",async()=>{if(!audio.src){alert("File lagu belum tersedia. Pastikan Beautiful Girl.mp3 ikut diunggah ke GitHub.");return}
+ if(audio.paused){try{await audio.play();musicToggle.textContent="Jeda";disc.classList.add("playing")}catch(e){alert("Musik belum bisa diputar. Coba pilih file audio lain.")}}
+ else{audio.pause();musicToggle.textContent="Putar";disc.classList.remove("playing")}});
+function updateCounter(){const start=new Date(SETTINGS.relationshipStart);let diff=Date.now()-start.getTime();if(diff<0)diff=0;
+ const d=Math.floor(diff/86400000);diff%=86400000;const h=Math.floor(diff/3600000);diff%=3600000;const m=Math.floor(diff/60000);diff%=60000;const s=Math.floor(diff/1000);
+ document.getElementById("days").textContent=d;document.getElementById("hours").textContent=h;document.getElementById("minutes").textContent=m;document.getElementById("seconds").textContent=s}
+updateCounter();setInterval(updateCounter,1000);
+function createQR(){const box=document.getElementById("qrcode");box.innerHTML="";
+ if(typeof QRCode==="undefined"){box.textContent="QR gagal dimuat. Periksa koneksi internet.";return}
+ const local=location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1";
+ const url=local?"https://ganti-dengan-domain-website-kamu.com":location.href.split("#")[0];
+ new QRCode(box,{text:url,width:230,height:230,colorDark:SETTINGS.accentColor,colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.H});
+ document.getElementById("qrStatus").textContent=local?"Pratinjau lokal: publikasikan website, lalu buka URL online agar QR mengarah ke alamat aslinya.":"QR mengarah ke: "+url}
+createQR();
+document.getElementById("downloadQR").addEventListener("click",()=>{const canvas=document.querySelector("#qrcode canvas"),img=document.querySelector("#qrcode img");const src=canvas?canvas.toDataURL("image/png"):(img?img.src:"");if(!src){alert("QR belum siap. Periksa koneksi lalu muat ulang.");return}const a=document.createElement("a");a.href=src;a.download="qr-untuk-fira.png";a.click()});
+const hearts=document.getElementById("floatingHearts");for(let i=0;i<16;i++){const el=document.createElement("span");el.className="float-heart";el.textContent=["♡","♥","✦"][i%3];el.style.left=Math.random()*100+"%";el.style.animationDuration=9+Math.random()*10+"s";el.style.animationDelay=-Math.random()*15+"s";el.style.fontSize=14+Math.random()*20+"px";hearts.appendChild(el)}
+</script>
+</body>
+</html>
